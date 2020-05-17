@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default React.createContext({
+export default class ApiContext extends React.createContext({
   notes: [],
   folders: [],
   addFolder: () => {},
