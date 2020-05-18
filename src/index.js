@@ -8,7 +8,9 @@ import { BrowserRouter } from 'react-router-dom'
 import 'typeface-roboto'
 import './index.css'
 import App from './App/App'
+import AddFolder from './AddFolder';
 
+ReactDOM.render(<AddFolder />, document.getElementById('root'));
 library.add(faPlus, faChevronLeft, faTrashAlt, faCheckDouble)
 
 ReactDOM.render(
