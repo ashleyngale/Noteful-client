@@ -10,6 +10,9 @@ import AddNote from '../AddNote/AddNote';
 import ApiContext from '../ApiContext';
 import config from '../config';
 import './App.css';
+import dummyStore from '../dummy-store';
+import {getNotesForFolder, findNote, findFolder} from '../notes-helpers';
+import './App.css';
 
 class App extends Component {
     state = {
@@ -84,6 +87,7 @@ class App extends Component {
     }
 
     renderMainRoutes() {
+        const{notes, folders} = this.state;
         return (
             <>
                 {['/', '/folder/:folderId'].map(path => 
