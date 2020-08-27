@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ValidationError from "./ValidationError";
+import ValidationError from "../src/ValidationError";
 
 class AddNote extends Component {
     constructor(props) {
